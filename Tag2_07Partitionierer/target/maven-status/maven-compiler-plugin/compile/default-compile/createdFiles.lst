@@ -1,0 +1,14 @@
+de\fi\tag2_07partitionierer\batch\StudentItemProcessor.class
+de\fi\tag2_07partitionierer\mapper\StudentMapperImpl.class
+de\fi\tag2_07partitionierer\batch\tasklet\SplitTasklet.class
+de\fi\tag2_07partitionierer\batch\StudentPartitioner.class
+de\fi\tag2_07partitionierer\batch\StudentReaderConfig.class
+de\fi\tag2_07partitionierer\batch\tasklet\CleanupTasklet.class
+de\fi\tag2_07partitionierer\mapper\StudentMapper.class
+de\fi\tag2_07partitionierer\batch\FileFailureListener.class
+de\fi\tag2_07partitionierer\JobRunner.class
+de\fi\tag2_07partitionierer\Tag207PartitioniererApplication.class
+de\fi\tag2_07partitionierer\model\Student.class
+de\fi\tag2_07partitionierer\batch\BatchConfig.class
+de\fi\tag2_07partitionierer\db\entity\StudentEntity.class
+de\fi\tag2_07partitionierer\db\StudentRepository.class

@@ -1,0 +1,13 @@
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\batch\BatchConfig.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\batch\FileFailureListener.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\batch\StudentItemProcessor.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\batch\StudentPartitioner.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\batch\StudentReaderConfig.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\batch\tasklet\CleanupTasklet.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\batch\tasklet\SplitTasklet.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\db\entity\StudentEntity.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\db\StudentRepository.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\JobRunner.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\mapper\StudentMapper.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\model\Student.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_07Partitionierer\src\main\java\de\fi\tag2_07partitionierer\Tag207PartitioniererApplication.java
