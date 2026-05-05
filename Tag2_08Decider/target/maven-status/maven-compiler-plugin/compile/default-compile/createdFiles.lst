@@ -1,0 +1,9 @@
+de\fi\tag2_08decider\batch\tasklet\AbschlussQuittierungTasklet.class
+de\fi\tag2_08decider\batch\BatchConfig.class
+de\fi\tag2_08decider\JobRunner.class
+de\fi\tag2_08decider\batch\tasklet\FehlerProtokollTasklet.class
+de\fi\tag2_08decider\batch\KundenTypDecider.class
+de\fi\tag2_08decider\batch\tasklet\PremiumRabattTasklet.class
+de\fi\tag2_08decider\Tag208DeciderApplication.class
+de\fi\tag2_08decider\batch\tasklet\StandardBearbeitungTasklet.class
+de\fi\tag2_08decider\batch\tasklet\BestellungErfassenTasklet.class

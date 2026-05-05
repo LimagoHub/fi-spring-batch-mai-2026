@@ -1,0 +1,9 @@
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_08Decider\src\main\java\de\fi\tag2_08decider\batch\BatchConfig.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_08Decider\src\main\java\de\fi\tag2_08decider\batch\KundenTypDecider.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_08Decider\src\main\java\de\fi\tag2_08decider\batch\tasklet\AbschlussQuittierungTasklet.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_08Decider\src\main\java\de\fi\tag2_08decider\batch\tasklet\BestellungErfassenTasklet.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_08Decider\src\main\java\de\fi\tag2_08decider\batch\tasklet\FehlerProtokollTasklet.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_08Decider\src\main\java\de\fi\tag2_08decider\batch\tasklet\PremiumRabattTasklet.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_08Decider\src\main\java\de\fi\tag2_08decider\batch\tasklet\StandardBearbeitungTasklet.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_08Decider\src\main\java\de\fi\tag2_08decider\JobRunner.java
+C:\Users\JoachimWagner\Documents\git\FinanzInformatik\fi-spring-batch-februar-2026\Tag2_08Decider\src\main\java\de\fi\tag2_08decider\Tag208DeciderApplication.java
