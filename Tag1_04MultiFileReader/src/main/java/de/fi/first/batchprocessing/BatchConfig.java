@@ -1,5 +1,6 @@
 package de.fi.first.batchprocessing;
 
+import de.fi.first.business.BlacklistService;
 import de.fi.first.entity.Person;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -14,6 +15,7 @@ import org.springframework.batch.item.file.MultiResourceItemReader;
 import org.springframework.batch.item.file.builder.FlatFileItemReaderBuilder;
 import org.springframework.batch.item.file.builder.MultiResourceItemReaderBuilder;
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
+import org.springframework.batch.item.support.CompositeItemProcessor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -70,12 +72,35 @@ public class BatchConfig {
                 .build();
     }
 
-    // Dummy Processor — keine @Bean, da er nur inline als Lambda benötigt wird
-    public ItemProcessor<Person, Person> processor() {
+    @Bean
+    public ItemProcessor<Person, Person> filter(BlacklistService  blacklistService) {
         return person -> {
-            System.out.println("Verarbeite: " + person.getFirstName() + " " + person.getLastName());
+           if(blacklistService.isBlacklisted(person)) return null;
             return person;
         };
+    }
+
+    // Dummy Processor — keine @Bean, da er nur inline als Lambda benötigt wird
+    public ItemProcessor<Person, Person> ageProcessor() {
+        return person -> {
+            System.out.println("Verarbeite: " + person.getFirstName() + " " + person.getLastName());
+            person.setAge(person.getAge() + 10);
+            return person;
+        };
+    }
+
+    // Dummy Processor — keine @Bean, da er nur inline als Lambda benötigt wird
+    public ItemProcessor<Person, Person> toUpperProcessor() {
+        return person -> {
+            System.out.println("Verarbeite: " + person.getFirstName() + " " + person.getLastName());
+            person.setFirstName(person.getFirstName().toUpperCase());
+            return person;
+        };
+    }
+
+    public ItemProcessor<Person, Person> compositeProcessor() {
+        CompositeItemProcessor<Person, Person> compositeProcessor = new CompositeItemProcessor<>(ageProcessor(), toUpperProcessor());
+        return compositeProcessor;
     }
 
     // Dummy Writer — gibt Items nur auf der Konsole aus statt sie zu persistieren
@@ -96,7 +121,7 @@ public class BatchConfig {
                 // kleiner Wert hier, um das Chunk-Verhalten im Log deutlich sichtbar zu machen
                 .<Person, Person>chunk(2, transactionManager)
                 .reader(multiResourceReader)
-                .processor(processor())// Bad practice
+                .processor(compositeProcessor())// Bad practice
                 .writer(writer())
                 .build();
     }
